@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes em CSS</title>
+<style>
+    .{/* Configuracoes globais de css*/
+        height: 100%;
+        /*serve para que o background nao seja movel ao descer ou subir, simplesmente fica movel*/
+        background-attachment: fixed;
+    }
+    body{
+        background-image: linear-gradient(45deg, #ff00e6, #3939ea, green, yellow );
+    } 
+    h1{
+        background-image: linear-gradient(to left, red, blue );
+    }
+    p{
+        background-image: linear-gradient(90deg, red, blue);
+    }
+    h2{
+        background-image: radial-gradient(circle, red 20%, #0022ff 10%, green 40%, yellow 5%, black);
+        /*os porcentos sao opcionais, para definir o quanto porcento de tela irao ocupar*/
+    }
+    h3{
+        background-image: linear-gradient(to bottom, red, blue,);
+    }
+    span{background-image: linear-gradient(to top, rgb(81, 0, 255),#a11414,#1e9630df)
+    }
+</style>
+</head>
+
+<body>
+    <h1><strong>Testeando</strong> Gradientes</h1>
+<p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo repudiandae sequi? A laudantium distinctio, veritatis repellendus, unde laboriosam iure sed, eveniet id ducimus dignissimos temporibus vitae laborum quisquam?<span>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo repudiandae sequi? A laudantium distinctio, veritatis repellendus, unde laboriosam iure sed, eveniet id ducimus dignissimos temporibus vitae laborum quisquam?</span></p>
+<h2>2 Teste de Gradiente: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo repudiandae sequi? A laudantium distinctio, veritatis repellendus, unde laboriosam iure sed, eveniet id ducimus dignissimos temporibus vitae laborum quisquam?</h2>
+<h3>3 Teste Gradiente: Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat suscipit quo repudiandae sequi? A laudantium distinctio, veritatis repellendus, unde laboriosam iure sed, eveniet id ducimus dignissimos temporibus vitae laborum quisquam?</h3>
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor quasi dolores ab repudiandae consequatur earum porro doloribus maxime facere ullam sapiente veritatis placeat, omnis molestias quibusdam debitis, necessitatibus aspernatur enim.
+Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati enim suscipit repudiandae accusantium voluptates fugiat magnam iure id veniam aspernatur voluptatem officia, libero impedit iusto omnis, voluptas optio minus nihil.
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, in distinctio perspiciatis officia est vero voluptatum eligendi! Nulla provident, optio doloremque iste, aperiam rem earum ducimus quidem a eos nam.
+Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nam neque amet assumenda facilis doloribus illum minima vero maxime nisi! Quasi ipsam soluta, maxime quis vero nostrum est in cumque nulla?
+</body>
+</html>
