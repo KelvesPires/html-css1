@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="Pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+   <form action="dados.php" method="post">
+       <p>
+        <label for="cor">Cores</label>
+       <input type="color" name="Cores" id="cor">
+       </p>
+
+       <p>
+        <label for="nivel">Nivel de satisfacao</label>
+        <input type="range" name="Nivel de satisfacao" id="nivel" value="2" min="2" max="10">
+       </p>
+       <p>
+        <label for="foto">Fotos</label>
+        <input type="file" name="foto" id="foto">
+       </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="Pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+      body {
+        font-family: Arial, Helvetica, sans-serif;
+      } 
+      table{
+        width: 400px;
+        height: 200px;
+        border-collapse: collapse;
+      }
+      td{
+        border: 1px solid black;
+        text-align: center;
+      }
+      caption{
+        font-weight: bolder;
+      }
+    </style>
+</head>
+<body>
+  <h1>Exercicios para Tabelas</h1> 
+  <!--
+    HIERARQUIA DE TABELAS
+    TABLE = tabela
+        TABLE ROW = linha de tabelas
+            TABLE HEADER = cabeçalho de tabelas
+            TABLE DATA = dado de tabela
+  -->
+  <section style=" padding-bottom: 3em">
+      <table>
+        <caption>Tabela Um</caption>
+        <tr> <!-- Primeira Linha-->
+            <td>A</td>
+            <td colspan="2">B</td>
+        </tr>
+        <tr> <!-- segunda Linha-->
+            <td rowspan="3">D</td>
+            <td>E</td>
+            <td rowspan="2">F</td>
+        </tr>
+        <tr> <!-- terceira Linha-->
+            <td>H</td>
+        </tr>
+        <tr> <!-- quarta Linha-->
+            <td colspan="2">K</td>
+        </tr>
+      </table>
+  </section>
+ 
+  <section>
+      <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</tdro>
+    
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+            <td>G</td>
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>K</td>
+            <td>L</td>
+        </tr>
+        <tr>
+            <td colspan="4">N</td>
+        </tr>
+      </table>
+  </section>
+</body>
+</html>
