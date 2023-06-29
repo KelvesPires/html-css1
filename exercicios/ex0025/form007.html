@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+   <form action="dados.php" method="post">
+      <p>
+        <label for="prov">Provincias</label>
+        <select name="Provincias" id="prov">
+            <option value="" selected>--Escolha--</option>
+            <optgroup label="Sul">
+                <option value="Mpt">Maputo</option>
+                <option value="Br">Beira</option>
+                <option value="Tt">Tete</option>
+            </optgroup>
+
+            <optgroup label="Norte">
+                <option value="Npl">Nampula</option>
+                <option value="Zb">Zambezia</option>
+                <option value="Mn">Manica</option>
+            </optgroup>
+        </select>
+      </p> 
+      <p>
+        <label for="prof">Profissao</label>
+        <input type="text" name="Profissao" id="prof" list="iprof">
+        <datalist id="iprof">
+            <option value="ADV">Advogado</option>
+            <option value="PSS">Professor</option>
+            <option value="MDC">Medico</option>
+            <option value="CT">Cientista</option>
+        </datalist>
+      </p>
+    <p>
+        <label for="txt">Mensagem:</label><br>
+        <textarea name="Mensagem" id="txt" cols="30" rows="10"></textarea>
+    </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
